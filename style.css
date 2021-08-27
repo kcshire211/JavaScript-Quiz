@@ -1,0 +1,17 @@
+.header {
+    background-color: aqua;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding: 1%;
+}
+
+.mainquiz {
+    font-size: large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    
+}
+
+.hidden {
+    display: none;
+}
