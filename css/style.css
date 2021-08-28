@@ -1,0 +1,41 @@
+.header {
+    background-color: aqua;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding: 1%;
+}
+
+.mainquiz {
+    font-size: large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+.hidden {
+    display: none;
+}
+
+#start-button {
+    font-size: 20px;
+    width: 12%;
+    margin-right: .5%;
+    border: 3px solid green;
+    background-color: rgb(120, 228, 120);
+}
+
+#high-scoresbtn {
+    font-size: 20px;
+    width: 12%;
+    margin-left: .5%;
+    border: 3px solid rgb(150, 73, 73);
+    background-color: rgb(238, 151, 151);
+}
+
+#start-button:hover {
+    border: 3px solid black;
+}
+
+#high-scoresbtn:hover {
+    border: 3px solid black;
+}
