@@ -215,3 +215,5 @@ function processInput (event) {
     localStorage.setItem("high-score", score)
 }
 
+//display high scores
+var highScores = document.getElementsByClassName("high-scores");
