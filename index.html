@@ -24,7 +24,7 @@
     <main class="mainquiz">
         <section id="start" class="quiz-section">
             <p class="card-text">Choose the best answer, wrong answers penalize your time left!</p>
-            <button id="start-button">Start!</button><button id="high-scoresbtn">Show High Scores!</button>
+            <button id="start-button">Start!</button><button id="high-scoresbtn">Show High Score!</button>
         </section>
         <section id="question-section" class="hidden questions">
             <p id="timer">Time: <span id="time-remaining">0</span></p>
@@ -42,9 +42,10 @@
             </form>
             <a href="index.html" class="back-button"><i class="fas fa-angle-left" aria-hidden="true"></i>Back to quiz</a>
         </section>
-        <section>
-            <container class="high-scores hidden">
-                <h2>High Scores:</h2>
+        <section id="high-scores" class="hidden">
+            <container>
+                <h2>High Score:</h2>
+                <p id="high-scores-display"></p>
 
             </container>
         </section>

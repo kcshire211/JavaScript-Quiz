@@ -3,12 +3,15 @@ var quizSections = document.querySelectorAll(".quiz-selection");
 //for the start button section
 var start = document.getElementById("start");
 var startBtn = document.getElementById("start-button");
+var highScoresButton = document.getElementById("high-scoresbtn");
 
 //for the quiz questions
 var questionSection = document.getElementById("question-section");
+var highScoreSection = document.getElementById("high-scores");
 var timeRemaining = document.getElementById("time-remaining");
 var question = document.getElementById("question");
 var choices = document.getElementById("choices");
+var highScoresDisplay = document.getElementById("high-scores-display");
 var choiceStatus = document.querySelectorAll(".choice-status");
 var correct = document.getElementById("correct");
 var wrong = document.getElementById("wrong");
@@ -63,6 +66,7 @@ let choiceStatusTimeout;
 //Event Listeners
 
 startBtn.addEventListener("click", startGame);
+highScoresButton.addEventListener("click", displayHighScore);
 choices.addEventListener("click", processChoice);
 submitScore.addEventListener("submit", processInput);
 
@@ -216,4 +220,12 @@ function processInput (event) {
 }
 
 //display high scores
-var highScores = document.getElementsByClassName("high-scores");
+
+function displayHighScore () {
+
+    var highScore = localStorage.getItem("high-score");
+    showElement(quizSections, highScoreSection);
+    highScoresDisplay.innerHTML = highScore;
+}
+
+
